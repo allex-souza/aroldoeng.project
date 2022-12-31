@@ -1,0 +1,863 @@
+@charset "utf8";
+@font-face {
+    font-family: Title;
+    src: url(/ProductBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+.cxButwh{/* - Whatsapp flutuante! - */
+    position: fixed;
+    display: block;
+    z-index: 5;
+    width: 5.5%;
+    border-radius: 20%;
+    bottom: 20px;
+    right: 20px;
+    animation: moveInBottom .8s ease-out;
+}
+@keyframes moveInBottom{
+    0% {
+            opacity: 0;
+            transform: translateY(30px);
+    }
+    100% {
+            opacity: 1;
+            transform: translateY(0px);
+    }
+}
+.cxButwh::after{
+    content:"";
+    display: block;
+    position: absolute;
+    background-color: #000000a2;
+    width: 100%;
+    border-radius: 20%;
+    z-index: -1;
+    height: 100%;
+    top:0;
+    animation:mymove  .8s infinite;
+}
+.cxButwh::before{
+    content:"";
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 20%;
+    z-index: -1;
+    height: 100%;
+    top:0;
+    animation: mymove .8s infinite;
+}
+@keyframes mymove{
+    0%{
+        opacity:1;
+        scale: 0;
+    }
+    99%{
+        opacity:0;
+        scale: 1.5;
+    }
+    100%{
+        opacity:0;
+        scale: 0;
+    }
+}
+#flut-wp{ /* - Whatsapp flutuante! - */
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    background-color: white;
+}
+#headerXbox{
+    width: 1000px;
+    margin: 0 auto;
+}
+#headerYbox{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#imgbox{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#imgbox img{
+    position: relative;
+    display: block;
+    width:155px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#laingNav{
+    position: relative;
+}
+#cursor-ativ{
+    color: #05af57;
+}
+#laingNav, #imgbox{
+    flex: 1 1 1;
+    justify-content: space-between;    
+}
+#cxnav{
+    display: flex;
+    position: relative;
+    height: 50px;
+    top: 50%;
+    transform: translate(0,-50%);
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#laingNav img{
+    width: 40px;
+    border-radius: 5px;
+}
+#divIcons{
+    flex: 1 1 1 ;
+    position: relative;
+    justify-content: flex-end;
+    margin: 15px;
+}
+#divIcons #cursor-ativ{
+    color: #373435;
+    font-size: x-large;
+}
+#capaPinc{
+    position: relative;
+    display: block;
+    background-color:#373435;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
+    color: #727473;
+    width: 100%;
+    /* min-width: 1180px; */
+    padding: 25px 0;
+}
+#borderbb{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 422px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid rgb(90, 90, 90);
+}
+#centerTitle{
+    position: relative;
+    display: block;
+    width: 300px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px;
+    border: 1px solid rebeccapurple;
+    background-color: #fff;
+    border: 2px solid rgb(90, 90, 90);
+}
+#centerTitle h1{
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+#centerTitle h3{
+    margin-top: 10px;
+    font-size: .9rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#centerTitle button{
+    background-color:#07773D;
+    font-size: 1.06rem;
+    font-weight: bolder;
+    padding: 13px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    z-index: 10;
+}
+#centerTitle button:hover{
+    background-color: #05af57;
+}
+
+/* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
+/* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
+/* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
+
+.articlest{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px;
+    position: relative;
+    display: block;
+}
+.contrasteBg{
+    background-color: rgb(215, 215, 215);
+    width: 100%;
+}
+#aling-y-x-geral{
+    display: flex;
+}
+.articlest{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.articlest h2{
+    font-size: 2.8rem;
+    font-family: Title;
+    color: #373435;
+    text-shadow: 0px 0px 3.5px #fff, 0px 0px 3px rgba(150, 150, 150, 0.849);
+    margin: 0 0 20px auto;
+}
+.articlest .imgGeral{
+    width: 38%;
+    height: 25%;
+    border-radius: .6rem;
+    box-shadow: 5px 5px #585a4b;
+}
+.articlest p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #373435;
+    padding: 10px 30px 10px 0;
+    letter-spacing: 0.019rem;
+}
+button{
+    background-color:#07773D;
+    font-size: 1.06rem;
+    font-weight: bolder;
+    padding: 13px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    animation: moveInBottom .8s ease-out;
+}
+button:hover{
+    background-color: #05af57;
+}
+footer{
+    background-color: #161616;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(240, 240, 240);
+    font-size:smaller;
+    text-align: center;
+    font-weight: 100 !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif !important;
+    /* min-width: 1180px; */
+}
+#link-color, .link-color{
+    cursor: pointer;
+    color: #242424;
+    text-decoration: none;
+    font-family: Title;
+    font-size: x-large;
+}
+#inputWhatsapp{
+    display: block;
+    padding: 15px 20px;
+    margin: 20px 0 0px 0;
+    width: 100%;
+    border: 2px solid #373435;
+    border-radius: 5px;
+    font-size: large;
+}
+#inputWhatsapp[type=text]:hover,
+textarea:hover {
+    background: #ffffff;
+    border: 2px solid #05af57;
+}
+#inputWhatsapp:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+#cardsMag{
+    flex: 1 1;
+    padding: 30px 30px;
+    background-color: #E3FEC8;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 50px;
+}
+.sobreMoble:hover{
+    color: #05af57 !important;
+}
+#cxCards{
+    display: flex;
+}
+a{
+    color: rgb(245, 241, 241);
+}
+a:hover{
+    color: #05af57;
+}
+/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
+/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
+/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
+/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
+/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
+
+/* @media (max-width: 1180px) {
+
+#headerYbox{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.modal-em-desv{
+    background-color: #05af57;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    font-size: 2.5rem !important;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 80px;
+  }
+  .close {
+    background: white;
+    width: 80px !important;
+    right: 40px !important;
+    top: 40px !important;
+    height: 40px !important;
+  }
+  .close:after {
+    content: '';
+    height: 200% !important;
+    border-left: 10px solid #07773D !important;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 28px;
+}
+
+.close:before {
+    content: '';
+    height: 200% !important;
+    border-left: 10px solid #07773D !important;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 28px;
+}
+
+#imgbox img{
+    width:350px;
+}
+#laingNav{
+    display: none;
+}
+header{
+    min-width: none;
+}
+#borderbb{
+    width: 1000px;
+    padding: 10px;
+}
+#centerTitle{
+    width: 874px;
+}
+#centerTitle h1{
+    font-size: 6rem;
+}
+#centerTitle h3{
+    font-size: 3rem;
+}
+#centerTitle button{
+    font-size: 3.5rem;
+    padding: 35px 70px;
+    border-radius: 80px;
+}
+#aling-y-x-geral{
+    display: block;
+}
+.articlest h2{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 5rem;
+    text-shadow:none !important;
+}
+.articlest  .imgGeral{
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    box-shadow: 10px 10px #585a4b;
+}
+.articlest p{
+    font-family: system-ui, -apple-system,S BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto auto 80px auto;
+    font-size: 3rem;
+    color: #373435;
+    padding: 10px 30px 10px 0;
+    letter-spacing: 0.019rem;
+}
+
+
+button{
+    font-size: 3.5rem;
+    padding: 35px 70px;
+    border-radius: 80px;
+    margin: 90px auto 40px auto;
+}
+#flut-wp{
+    width: 13%;
+}
+footer{
+    font-size: 2rem;
+    padding: 20px 0 20px 0;
+}
+
+.cxsobre{
+    width: 1080px;
+    padding: 60px 0 60px 0;
+}
+.cxsobre img{
+    display: block;
+    height: 100% !important;
+    width: 50%;
+    margin: 40px auto;
+}
+.secondCXSobre{
+    display: block !important;
+    width: 1080px !important;
+}
+.qComp h3{
+    font-size: 5rem !important;
+    color: #ffffff;
+}
+.qComp{
+    margin-left: 0px;
+}
+.qComp p{
+    font-size: 3rem !important;
+}
+
+#flut-wp{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.cxButwh{
+    position: fixed;
+    display: block;
+    z-index: 5;
+    width: 5.5%;
+    border-radius: 20%;
+    bottom: 20px;
+    right: 20px;
+    animation: moveInBottom .8s ease-out;
+}
+@keyframes moveInBottom{
+    0% {
+            opacity: 0;
+            transform: translateY(30px);
+    }
+    100% {
+            opacity: 1;
+            transform: translateY(0px);
+    }
+}
+
+
+#flut-wp{
+    width: 100% !important;
+}
+.cxButwh{
+    width: 13%;
+}
+
+}
+
+*/
+/*- ----------------------------------------------------------------------- -*/
+
+.backgrSobre{
+    background-color: #07773D;
+    /* min-width: 1180px; */
+}
+.cxsobre{
+    width: 800px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+}
+.cxsobre img{
+    height: 300px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.secondCXSobre{
+    display: flex;
+}
+.qComp h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: Title;
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.849);
+}
+.qComp{
+    margin-left: 40px;
+}
+.qComp p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 10px 30px 10px 0;
+    letter-spacing: 0.019rem;
+    text-shadow: rgba(0, 0, 0, 0.849);
+}
+
+.modalServiços{
+    background-color: #07773D;
+    width: 342px;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    right:0px;
+    border-radius: 0 6px  6px  6px ;
+    top: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: inModal .2s ease-out;
+}
+@keyframes  inModal{
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+}
+    60% {
+    opacity: .5;
+    transform: translateY(-15px);
+}
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+}
+}
+.modalServiços::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 10px solid #07773D;
+}
+.activeMenu{
+    display: block;
+}
+#cursor-ativ{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    transition: none;
+}
+
+
+.modalServiços ol{
+    list-style: none;
+    margin: 20px;
+}
+.modalServiços ol li{
+    border-bottom: 1px solid white;
+    font-family: system-ui, -apple-system,S BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    padding:3px 4px 5px 4px;
+    color: white;
+
+}
+.modalServiços ol li:hover{
+    background-color: #0c9e53;
+    cursor: pointer;
+    scale: 1.04;
+}
+
+/* modal página em dev */
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    margin: 10px auto 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background:#05af57;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  
+  
+  .modal-em-desv{
+    background-color: #ffffff;
+    color: #07773D;
+    transition: all 2s initial;
+    position: fixed;
+    top: 0;
+    border-radius: 2px;
+    font-size: 1rem;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 40px 80px;
+  }
+  .modal-em-desv h1{
+    margin-top: 20px;
+  }
+  .blackback{
+    background-color: #000000c6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    display: block;
+    height: 100%;
+  }
+  .close{
+    background: white;
+    width: 60px;
+    right: 20px;
+    top: 20px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+
+.close:after {
+    content: '';
+    height: 60px;
+    border-left: 6px solid #07773D;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 28px;
+}
+
+.close:before {
+    content: '';
+    height: 60px;
+    border-left: 6px solid #07773D;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 28px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* media query // media query // media query // media query // media query // media query // media query // */
+
+@media (max-width: 1000px){
+    #headerXbox{
+        width: 85%;
+    }
+    #headerYbox{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #imgbox img{
+        width:100px;
+    }
+    .hamburgerbut{
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 0;
+        right:0;
+
+        top: 50%;
+        transform: translate(0,-50%)
+    }
+    .hamburgerbut div{
+        background-color: #242424;
+        border-radius: 2px;
+        width: 100%;
+        position: absolute;
+        height: 7px;
+        display: block;
+
+    }
+    .hamburgerbut div:nth-child(1){
+        top: 0;
+
+    }
+    .hamburgerbut div:nth-child(2){
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    .hamburgerbut div:nth-child(3){
+        top: 100%;
+        transform: translate(0,-100%);
+    }
+
+
+    .offX div:nth-child(1){
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .offX div:nth-child(2){
+        display: none;
+    }
+    .offX div:nth-child(3){
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    #laingNav{
+        display: none;
+    }
+    #headerXbox{
+        width: 90% !important; 
+    }
+    .articlest{
+        width: 90% !important;
+        padding: 50px 0;
+    }
+    #aling-y-x-geral , .cxsobre{
+        display: block !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    #aling-y-x-geral img{
+        width: 100%;
+    }
+    #alingy-x-desk{
+        font-size: 1rem !important;
+        padding: 0px 0px 20px 0;
+    }
+    .articlest h2{
+        font-size:1.8rem;
+        width: 90% !important;
+        margin:  0 auto 20px auto !important;
+    }
+    .articlest button{
+        position: relative;
+        display: block;
+        width: 90%;
+        font-size: 1.19rem !important;
+    }
+    .qComp h3{
+        font-size: 1.8rem !important;
+    }
+    .qComp p{
+        font-size: 1rem !important;
+    }
+
+
+
+
+
+
+    #capaPinc{
+        position: relative;
+        display: block;
+        background-color:#373435;
+        background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
+        color: #727473;
+        width: 100%;
+        /* min-width: 1180px; */
+        padding: 20px 0;
+    }
+    #borderbb{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 320px;
+        padding: 10px;
+        background-color: #fff;
+        border: 2px solid rgb(90, 90, 90);
+    }
+    #centerTitle{
+        position: relative;
+        display: block;
+        width: 278px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid rebeccapurple;
+        background-color: #fff;
+        border: 2px solid rgb(90, 90, 90);
+    }
+    #centerTitle h1{
+        font-size: 2.2rem;
+    }
+    #centerTitle h3{
+        margin-top: 10px;
+        font-size: .9rem;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    #centerTitle button{
+        position: relative;
+        display: block;
+        font-size: 1.1rem !important;
+    }
+
+
+  }
