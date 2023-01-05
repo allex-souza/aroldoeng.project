@@ -196,9 +196,10 @@ header{
     margin: 20px auto 0 auto;
     cursor: pointer;
     z-index: 10;
+    transition: background .4s;
 }
 #centerTitle button:hover{
-    background-color: #05af57;
+    background-color: #37cf80;
 }
 
 /* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
@@ -255,10 +256,12 @@ button{
     margin: 30px auto 0 auto;
     cursor: pointer;
     animation: moveInBottom .8s ease-out;
+    transition: background .4s;
 }
 button:hover{
-    background-color: #05af57;
+    background-color: #37cf80;
 }
+
 footer{
     background-color: #161616;
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
@@ -775,7 +778,7 @@ html {
         width: 90% !important; 
     }
     .articlest{
-        width: 90% !important;
+        width: 100% !important;
         padding: 50px 0;
     }
     #aling-y-x-geral , .cxsobre{
@@ -860,4 +863,22 @@ html {
     }
 
 
+  }
+
+  .imgContact{
+    box-shadow: none !important;
+    width: 40% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .contactParag{
+    font-size: 1.9rem !important;
+  }
+  .alingimgsobre{
+    display: flex !important;
+    position: relative !important;
+    
+  }
+  .alingitemscete{
+    align-items: center !important;
   }
