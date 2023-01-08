@@ -862,7 +862,12 @@ html {
         font-size: 1.1rem !important;
     }
 
-
+    .imgGeral{
+        display: none !important;
+    }
+    h2.contatoAeng{
+        margin: 0 !important;
+    }
   }
 
   .imgContact{
