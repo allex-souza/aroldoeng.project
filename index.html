@@ -61,7 +61,7 @@
                 <nav id="laingNav">
                         <div id="cxnav">
                             <div id="divIcons">
-                                <div style="font-family:Title; color: #05af57;" class="link-color">Home</div>
+                                <a href=""><div style="font-family:Title; color: #05af57;" class="link-color">Home</div></a>
                             </div>
                             <div id="divIcons">
                                 <div style="font-family:Title;" id="cursor-ativ-modal"  class="link-color sobreMoble">Serviços</div>
@@ -73,32 +73,22 @@
                                 <a href="#sobre"><h3 style="font-family:Title;" id="cursor-ativ" class="link-color sobreMoble">Sobre</h3></a>
                             </div>
                             <div id="divIcons">
-                                <img class="sociaisIcons" id="cursor-ativ" src="whatsapp.png" alt="">
+                                <a><img class="sociaisIcons" id="cursor-ativ" src="whatsapp.png" alt=""></a>
                             </div>
                             <div class="sociaisIcons" id="divIcons">
-                                <img id="cursor-ativ"  src="intagram.png" alt="">
+                                <a href=""><img id="cursor-ativ"  src="intagram.png" alt=""></a>
                             </div>
                             <div id="modalServiçoss" class="modalServiços ">
                                 <ol>
-                                    <li><a href="#inspecao-predial" class="clickNavJobs">Inspeção Predial</li></a>
-                                    <a href="#vistoria-cautelar-de-vizinhanca" class="clickNavJobs" ><li>Vistoria Cautelar de Vizinhança</li>
-                                    <a href="#anomalias-construtivas" class="clickNavJobs" ><li>Inspeção de Anomalias Construtivas</li>
-                                    <a href="#entrega-de-obras" class="clickNavJobs" ><li>Vistoria de Entrega de Obras</li>
-                                    <a href="#entrega-de-chaves" class="clickNavJobs" ><li>Vistoria de Entrega de Chaves</li>
-                                    <a href="#assistencia-tecnica-judicial"><li>Assistência Técnica Judicial</li>
-                                    <a href="#vistoria-locativa" class="clickNavJobs" ><li>Vistoria Locativa</li>
-                                    <a href="#gestao-de-obras-e-reformas" class="clickNavJobs" ><li>Gestão de Obras e Reformas</li>
-                                    <a href="#execucao-de-obras-e-reformas" class="clickNavJobs" ><li>Execução de Obras e Reformas</li>
-<!-- 
-                                    <li class="clickNavJobs">Inspeção Predial</li></a>
-                                    <li class="clickNavJobs">Vistoria Cautelar de Vizinhança</li></a>
-                                    <li>Inspeção de Anomalias Construtivas</li></a>
-                                    <li class="clickNavJobs">Vistoria de Entrega de Obras</li></a>
-                                    <li class="clickNavJobs">Vistoria de Entrega de Chaves</li></a>
-                                    <li class="clickNavJobs">Assistência Técnica Judicial</li></a>
-                                    <li class="clickNavJobs">Vistoria Locativa</li></a>
-                                    <li class="clickNavJobs">Gestão de Obras e Reformas</li></a>
-                                    <li class="clickNavJobs">Execução de Obras e Reformas</li></a> -->
+                                    <li><a href="#inspecao-predial" class="clickNavJobs">Inspeção Predial</a></li>
+                                    <li><a href="#vistoria-cautelar-de-vizinhanca" class="clickNavJobs">Vistoria Cautelar de Vizinhança</a></li>
+                                    <li><a href="#anomalias-construtivas" class="clickNavJobs" >Inspeção de Anomalias Construtivas</a></li>
+                                    <li><a href="#entrega-de-obras" class="clickNavJobs" >Vistoria de Entrega de Obras</a></li>
+                                    <li><a href="#entrega-de-chaves" class="clickNavJobs" >Vistoria de Entrega de Chaves</a></li>
+                                    <li><a href="#assistencia-tecnica-judicial">Assistência Técnica Judicial</a></li>
+                                    <li><a href="#vistoria-locativa" class="clickNavJobs" >Vistoria Locativa</a></li>
+                                    <li><a href="#gestao-de-obras-e-reformas" class="clickNavJobs" >Gestão de Obras e Reformas</a></li>
+                                    <li><a href="#execucao-de-obras-e-reformas" class="clickNavJobs" >Execução de Obras e Reformas</a></li>
                                 </ol>
                             <script>
 
@@ -107,18 +97,13 @@
                                     item.addEventListener("click", scrollToId)
                                 })
                                 function scrollToId(event) {
-                                    console.log(event)
+                                    const elemento = event.target
+                                    const id = elemento.getAttribute("href")
+                                    const article = document.querySelector(id)
+                                    window.scroll(0,500)
                                 }
-
-
-
-
-
-
-
-
-
-
+                                
+                                
 
 
 
