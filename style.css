@@ -876,7 +876,16 @@ html {
     .qComp h3{
         margin-top: 10px;
     }
-    
+    .cxButwh{/* - Whatsapp flutuante! - */
+        position: fixed;
+        display: block;
+        z-index: 5;
+        width: 15%;
+        border-radius: 20%;
+        bottom: 10px;
+        right: 10px;
+        animation: moveInBottom .8s ease-out;
+    }
   }
 
   .imgContact{
