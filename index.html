@@ -50,7 +50,6 @@
         document.getElementById("manipModalemdev2").style.display="none"})
     </script>
         
-
     <header> <!-- INICIO HEADER -->
         <div id="headerXbox">
             <div id="headerYbox">
@@ -67,9 +66,9 @@
                             <div id="divIcons">
                                 <div style="font-family:Title;" id="cursor-ativ-modal"  class="link-color sobreMoble">Serviços</div>
                             </div>
-                            <a href="#contatoAro"><div id="divIcons">
+                            <!-- <a href="#contatoAro"><div id="divIcons">
                                 <div style="font-family:Title;" id="cursor-ativ"  class="link-color sobreMoble">Contato</div>
-                            </div></a>
+                            </div></a> -->
                             <div id="divIcons">
                                 <a href="#sobre"><h3 style="font-family:Title;" id="cursor-ativ" class="link-color sobreMoble">Sobre</h3></a>
                             </div>
@@ -81,22 +80,59 @@
                             </div>
                             <div id="modalServiçoss" class="modalServiços ">
                                 <ol>
-                                    <a href="#inspecao-predial"><li>Inspeção Predial</li></a>
-                                    <a href="#vistoria-cautelar-de-vizinhanca"><li>Vistoria Cautelar de Vizinhança</li></a>
-                                    <a href="#anomalias-construtivas"><li>Inspeção de Anomalias Construtivas</li></a>
-                                    <a href="#entrega-de-obras"><li>Vistoria de Entrega de Obras</li></a>
-                                    <a href="#entrega-de-chaves"><li>Vistoria de Entrega de Chaves</li></a>
-                                    <a href="#assistencia-tecnica-judicial"><li>Assistência Técnica Judicial</li></a>
-                                    <a href="#vistoria-locativa"><li>Vistoria Locativa</li></a>
-                                    <a href="#gestao-de-obras-e-reformas"><li>Gestão de Obras e Reformas</li></a>
-                                    <a href="#execucao-de-obras-e-reformas"><li>Execução de Obras e Reformas</li></a>
+                                    <li><a href="#inspecao-predial" class="clickNavJobs">Inspeção Predial</li></a>
+                                    <a href="#vistoria-cautelar-de-vizinhanca" class="clickNavJobs" ><li>Vistoria Cautelar de Vizinhança</li>
+                                    <a href="#anomalias-construtivas" class="clickNavJobs" ><li>Inspeção de Anomalias Construtivas</li>
+                                    <a href="#entrega-de-obras" class="clickNavJobs" ><li>Vistoria de Entrega de Obras</li>
+                                    <a href="#entrega-de-chaves" class="clickNavJobs" ><li>Vistoria de Entrega de Chaves</li>
+                                    <a href="#assistencia-tecnica-judicial"><li>Assistência Técnica Judicial</li>
+                                    <a href="#vistoria-locativa" class="clickNavJobs" ><li>Vistoria Locativa</li>
+                                    <a href="#gestao-de-obras-e-reformas" class="clickNavJobs" ><li>Gestão de Obras e Reformas</li>
+                                    <a href="#execucao-de-obras-e-reformas" class="clickNavJobs" ><li>Execução de Obras e Reformas</li>
+<!-- 
+                                    <li class="clickNavJobs">Inspeção Predial</li></a>
+                                    <li class="clickNavJobs">Vistoria Cautelar de Vizinhança</li></a>
+                                    <li>Inspeção de Anomalias Construtivas</li></a>
+                                    <li class="clickNavJobs">Vistoria de Entrega de Obras</li></a>
+                                    <li class="clickNavJobs">Vistoria de Entrega de Chaves</li></a>
+                                    <li class="clickNavJobs">Assistência Técnica Judicial</li></a>
+                                    <li class="clickNavJobs">Vistoria Locativa</li></a>
+                                    <li class="clickNavJobs">Gestão de Obras e Reformas</li></a>
+                                    <li class="clickNavJobs">Execução de Obras e Reformas</li></a> -->
                                 </ol>
                             <script>
+
+                                const mYclickNavJobs = document.querySelectorAll(".clickNavJobs")
+                                mYclickNavJobs.forEach(item => {
+                                    item.addEventListener("click", scrollToId)
+                                })
+                                function scrollToId(event) {
+                                    console.log(event)
+                                }
+
+
+
+
+
+
+
+
+
+
+
+
+
                                 const butServicos = document.querySelector("#cursor-ativ-modal")
                                 const modalServicos = document.querySelector("#modalServiçoss")
 
-                                butServicos.addEventListener("click",vaiqq)
+                                 butServicos.addEventListener("click",vaiqq)
                                 function vaiqq() {
+                                    modalServicos.classList.toggle("activeMenu");
+                                }
+                                const closeModalJobs = document.querySelector("#closeModal")
+                                closeModalJobs.addEventListener("mousedown", closemodalaa)
+
+                                function closemodalaa() {
                                     modalServicos.classList.toggle("activeMenu");
                                 }
 
@@ -270,7 +306,7 @@
         </div>
     </article>
 
-    <article  class="contrasteBg"  id="contatoAro">
+<!--     <article  class="contrasteBg"  id="contatoAro">
         <div class=" articlest">
                 <div id="aling-y-x-geral" class="alingitemscete">        
                     <div id="alingimgsobre">
@@ -285,7 +321,7 @@
                 </div> 
         </div>
     </article>
-
+ -->
     <!--SEÇÃO SOBRE   SEÇÃO SOBRE   SEÇÃO SOBRE   SEÇÃO SOBRE-->
 
     <article class="backgrSobre" id="sobre">
