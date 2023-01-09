@@ -514,7 +514,7 @@ footer{
     width: 800px;
     position: relative;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 60px 0 60px 0;
 }
 .cxsobre img{
@@ -862,12 +862,21 @@ html {
         font-size: 1.1rem !important;
     }
 
-    .imgGeral{
+    #contatoAro{
         display: none !important;
     }
-    h2.contatoAeng{
-        margin: 0 !important;
+    .qComp{
+        margin: 0 auto !important;
+        position: relative !important;
+        display: block !important;
     }
+    .qComp p{
+        padding: 2px 0px 0px 0 !important;
+    }
+    .qComp h3{
+        margin-top: 10px;
+    }
+    
   }
 
   .imgContact{
