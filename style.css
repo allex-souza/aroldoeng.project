@@ -74,7 +74,6 @@ a{
     display: block;
     width: 100%;
 }
-
 header{
     position: relative;
     display: block;
@@ -108,7 +107,6 @@ header{
     top: 50%;
     transform: translate(0,-50%);
 }
-
 #laingNav{
     position: relative;
 }
@@ -201,11 +199,6 @@ header{
 #centerTitle button:hover{
     background-color: #37cf80;
 }
-
-/* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
-/* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
-/* ARTICLE ------------------------- *//* ARTICLE ------------------------- */
-
 .articlest{
     width: 1000px;
     margin: 0 auto;
@@ -261,7 +254,6 @@ button{
 button:hover{
     background-color: #37cf80;
 }
-
 footer{
     background-color: #161616;
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tactile_noise.png");
@@ -321,190 +313,6 @@ a{
 a:hover{
     color: #05af57;
 }
-/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
-/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
-/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
-/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
-/*------MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA--MEIDIA-----*/
-
-/* @media (max-width: 1180px) {
-
-#headerYbox{
-    height: 280px;
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-}
-.modal-em-desv{
-    background-color: #05af57;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 80%;
-    font-size: 2.5rem !important;
-    z-index: 5;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    padding: 80px;
-  }
-  .close {
-    background: white;
-    width: 80px !important;
-    right: 40px !important;
-    top: 40px !important;
-    height: 40px !important;
-  }
-  .close:after {
-    content: '';
-    height: 200% !important;
-    border-left: 10px solid #07773D !important;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 28px;
-}
-
-.close:before {
-    content: '';
-    height: 200% !important;
-    border-left: 10px solid #07773D !important;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 28px;
-}
-
-#imgbox img{
-    width:350px;
-}
-#laingNav{
-    display: none;
-}
-header{
-    min-width: none;
-}
-#borderbb{
-    width: 1000px;
-    padding: 10px;
-}
-#centerTitle{
-    width: 874px;
-}
-#centerTitle h1{
-    font-size: 6rem;
-}
-#centerTitle h3{
-    font-size: 3rem;
-}
-#centerTitle button{
-    font-size: 3.5rem;
-    padding: 35px 70px;
-    border-radius: 80px;
-}
-#aling-y-x-geral{
-    display: block;
-}
-.articlest h2{
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: 800 !important;
-    font-size: 5rem;
-    text-shadow:none !important;
-}
-.articlest  .imgGeral{
-    width: 100%;
-    height: 25%;
-    border-radius: 20px;
-    box-shadow: 10px 10px #585a4b;
-}
-.articlest p{
-    font-family: system-ui, -apple-system,S BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: auto auto 80px auto;
-    font-size: 3rem;
-    color: #373435;
-    padding: 10px 30px 10px 0;
-    letter-spacing: 0.019rem;
-}
-
-
-button{
-    font-size: 3.5rem;
-    padding: 35px 70px;
-    border-radius: 80px;
-    margin: 90px auto 40px auto;
-}
-#flut-wp{
-    width: 13%;
-}
-footer{
-    font-size: 2rem;
-    padding: 20px 0 20px 0;
-}
-
-.cxsobre{
-    width: 1080px;
-    padding: 60px 0 60px 0;
-}
-.cxsobre img{
-    display: block;
-    height: 100% !important;
-    width: 50%;
-    margin: 40px auto;
-}
-.secondCXSobre{
-    display: block !important;
-    width: 1080px !important;
-}
-.qComp h3{
-    font-size: 5rem !important;
-    color: #ffffff;
-}
-.qComp{
-    margin-left: 0px;
-}
-.qComp p{
-    font-size: 3rem !important;
-}
-
-#flut-wp{
-    position: relative;
-    display: block;
-    width: 100%;
-}
-.cxButwh{
-    position: fixed;
-    display: block;
-    z-index: 5;
-    width: 5.5%;
-    border-radius: 20%;
-    bottom: 20px;
-    right: 20px;
-    animation: moveInBottom .8s ease-out;
-}
-@keyframes moveInBottom{
-    0% {
-            opacity: 0;
-            transform: translateY(30px);
-    }
-    100% {
-            opacity: 1;
-            transform: translateY(0px);
-    }
-}
-
-
-#flut-wp{
-    width: 100% !important;
-}
-.cxButwh{
-    width: 13%;
-}
-
-}
-
-*/
-/*- ----------------------------------------------------------------------- -*/
 
 .backgrSobre{
     background-color: #07773D;
@@ -589,8 +397,6 @@ footer{
     padding: 0;
     transition: none;
 }
-
-
 .modalServiços ol{
     list-style: none;
     margin: 20px;
@@ -648,8 +454,6 @@ footer{
       height: 32px;
     }
   }
-  
-  
   .modal-em-desv{
     background-color: #ffffff;
     color: #07773D;
@@ -688,8 +492,6 @@ footer{
     position: absolute;
     cursor: pointer;
   }
-
-
 .close:after {
     content: '';
     height: 60px;
@@ -698,7 +500,6 @@ footer{
     transform: rotate(45deg);
     left: 28px;
 }
-
 .close:before {
     content: '';
     height: 60px;
@@ -811,12 +612,6 @@ html {
     .qComp p{
         font-size: 1rem !important;
     }
-
-
-
-
-
-
     #capaPinc{
         position: relative;
         display: block;
@@ -904,7 +699,6 @@ html {
         height: 50px;
         }
   }
-
   .imgContact{
     box-shadow: none !important;
     width: 40% !important;
@@ -916,8 +710,7 @@ html {
   }
   .alingimgsobre{
     display: flex !important;
-    position: relative !important;
-    
+    position: relative !important; 
   }
   .alingitemscete{
     align-items: center !important;
