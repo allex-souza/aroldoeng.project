@@ -571,7 +571,6 @@ html {
     .offX div:nth-child(3){
         transform: rotate(-45deg) !important;
     }
-    
     #laingNav{
         display: none;
     }
@@ -728,3 +727,56 @@ html {
   #sobre{
     padding: 0 0 50px 0;
   }
+
+  /*MENU SUSPENSO - TOGGLE MOBILE*/
+
+ 
+  .tapHamburgerNavl{
+    display: flex;
+    position: absolute !important;
+    display: block !important;
+    background-color: white;
+    border-top: 1px solid #333333;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    top:80px;
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 6 !important;
+}
+.tapHamburger{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    top: 0%  !important;
+    transform: translate(0,0) !important;
+    justify-content: center !important;
+    z-index: 6 !important;
+    
+    /* background-color: yellow; */
+}
+.offHomeMobile{
+    display: none !important;
+}
+.titleJobsModal{
+    text-align: center;
+    color: white;
+    margin: 20px 0 0 0;
+    font-size: x-large;
+}
+.tapButHamburgerModal{
+    z-index:6 !important;
+    display: block;
+    width:100%;
+    left: 0;
+    border-radius:  0 0 6px 6px;
+}
+.tapButHamburgerModal::after{
+    display: none;
+}
