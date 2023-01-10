@@ -519,6 +519,12 @@ html {
 /* media query // media query // media query // media query // media query // media query // media query // */
 
 @media (max-width: 1000px){
+    .offHomeMobile{
+        display: none !important;
+    }
+    .titleJobsModal{
+        display: block !important;
+    }
     #headerXbox{
         width: 85%;
     }
@@ -761,13 +767,12 @@ html {
     
     /* background-color: yellow; */
 }
-.offHomeMobile{
-    display: none !important;
-}
+
 .titleJobsModal{
     text-align: center;
     color: white;
     margin: 20px 0 0 0;
+    display: none;
     font-size: x-large;
 }
 .tapButHamburgerModal{

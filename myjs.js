@@ -7,6 +7,8 @@ document.getElementById("closeModalEmDev").addEventListener("click",()=>{
               function testtt() {
                             document.querySelector(".hamburgerbut").classList.toggle("offX")
                             document.querySelector("#laingNav").classList.toggle("tapHamburgerNavl")
+                            document.querySelector("#cxnav").classList.toggle("tapHamburger")
+                            document.querySelector("#modalServiçoss").classList.toggle("tapButHamburgerModal")
               }
 
 
