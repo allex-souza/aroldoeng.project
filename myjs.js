@@ -6,7 +6,14 @@ document.getElementById("closeModalEmDev").addEventListener("click",()=>{
               butXoff.addEventListener("click", testtt)
               function testtt() {
                             document.querySelector(".hamburgerbut").classList.toggle("offX")
+                            document.querySelector("#laingNav").classList.toggle("tapHamburgerNavl")
               }
+
+
+
+
+
+
 
 const mYclickNavJobs = document.querySelectorAll(".clickNavJobs")
               mYclickNavJobs.forEach(item => {
