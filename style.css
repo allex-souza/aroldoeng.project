@@ -194,7 +194,7 @@ header{
     color: white;
     margin: 20px auto 0 auto;
     cursor: pointer;
-    z-index: 4;
+    z-index: 1;
     transition: background .4s;
 }
 #centerTitle button:hover{
