@@ -106,6 +106,7 @@ header{
     width:155px;
     top: 50%;
     transform: translate(0,-50%);
+    
 }
 #laingNav{
     position: relative;
@@ -129,7 +130,7 @@ header{
     flex-wrap: nowrap;
 }
 #laingNav img{
-    width: 40px;
+    width: 35px;
     border-radius: 5px;
 }
 #divIcons{
@@ -323,11 +324,13 @@ a:hover{
     position: relative;
     display: block;
     margin: 0 auto !important;
-    padding: 60px 0 60px 0;
+    padding: 60px 0 0px 0;
 }
 .cxsobre img{
     height: 300px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+    border-radius: 2px;
 }
 .secondCXSobre{
     display: flex;
@@ -715,4 +718,15 @@ html {
   }
   .alingitemscete{
     align-items: center !important;
+  }
+  .alingButtonSobre{
+    margin:40px auto 0 auto;
+    background-color: white;
+    color: #05af57;
+    position: relative;
+    display: block;
+    
+  }
+  #sobre{
+    padding: 0 0 50px 0;
   }
