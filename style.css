@@ -535,46 +535,43 @@ html {
     }
     .hamburgerbut{
         position: relative;
-        display: block;
+        display: flex;
         width: 50px;
-        height: 30px;
         right:0;
-
         top: 50%;
-        transform: translate(0,-50%)
+        transform: translate(0,-50%);
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
     }
     .hamburgerbut div{
+        margin: 3px 0;
         border-radius: 2px;
         background-color: #161616;
         width: 100%;
-        position: absolute;
+        position: relative;
         height: 7px;
         display: block;
-
     }
-    .hamburgerbut div:nth-child(1){
+    .offX{
+        margin: 0 !important;
+        flex-direction: row-reverse;
+        align-items: center;
     }
-    .hamburgerbut div:nth-child(2){
-        top: 50%;
-        transform:translate(0,-50%);
+    .offX div{
+        position: absolute;
     }
-    .hamburgerbut div:nth-child(3){
-        top: 100%;
-        transform:translate(0,-100%);
-    }
-
 
     .offX div:nth-child(1){
-        top: 0;
-        transform: rotate(45deg);
+        transform: rotate(45deg) !important;
     }
     .offX div:nth-child(2){
-        display: none;
+        display: none !important;
     }
     .offX div:nth-child(3){
-        top: 0;
-        transform: rotate(-45deg);
+        transform: rotate(-45deg) !important;
     }
+    
     #laingNav{
         display: none;
     }

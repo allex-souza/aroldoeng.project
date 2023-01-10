@@ -6,7 +6,6 @@
     <title>Aroldo Brandão Engenharia</title>
     <link rel="shortcut icon" href="icon-aroldo-brandao-engenharia-goiania-go.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="myjs.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="title" content="Aroldo Brandão Engenharia" />
     <meta http-equiv="content-type" content="text/html" />
@@ -41,11 +40,6 @@
 
         <div class="lds-facebook"><div></div><div></div><div></div></div>
     </div>
-    <script>
-        document.getElementById("closeModalEmDev").addEventListener("click",()=>{
-        document.getElementById("manipModalemdev").style.display="none"
-        document.getElementById("manipModalemdev2").style.display="none"})
-    </script>
         
     <header> <!-- INICIO HEADER -->
         <div id="headerXbox">
@@ -55,7 +49,7 @@
                 </div>             
                 <!-- Nav menu Hamburger Mobile -->
                 <div class="hamburgerbut"><div></div><div></div><div></div></div>
-                
+
                 <nav id="laingNav">
                         <div id="cxnav">
                             <div id="divIcons">
@@ -85,41 +79,6 @@
                                     <li><a href="#gestao-de-obras-e-reformas" class="clickNavJobs" >Gestão de Obras e Reformas</a></li>
                                     <li><a href="#execucao-de-obras-e-reformas" class="clickNavJobs" >Execução de Obras e Reformas</a></li>
                                 </ol>
-                            <script>
-
-                                const mYclickNavJobs = document.querySelectorAll(".clickNavJobs")
-                                mYclickNavJobs.forEach(item => {
-                                    item.addEventListener("click", scrollToId)
-                                })
-                                function scrollToId(event) {
-                                    const elemento = event.target
-                                    const id = elemento.getAttribute("href")
-                                    const article = document.querySelector(id)
-                                    window.scroll(0,500)
-                                }
-                                
-                                
-
-
-
-                                const butServicos = document.querySelector("#cursor-ativ-modal")
-                                const modalServicos = document.querySelector("#modalServiçoss")
-
-                                 butServicos.addEventListener("click",vaiqq)
-                                function vaiqq() {
-                                    modalServicos.classList.toggle("activeMenu");
-                                }
-                                const closeModalJobs = document.querySelector("#closeModal")
-                                closeModalJobs.addEventListener("mousedown", closemodalaa)
-
-                                function closemodalaa() {
-                                    modalServicos.classList.toggle("activeMenu");
-                                }
-
-                                const butXoff = document.querySelector(".hamburgerbut").addEventListener("click", ()=>{
-                                    document.querySelector(".hamburgerbut").classList.toggle("offX")
-                                })
-                            </script>
                         </div>
                     </div>
                 </nav>
@@ -312,4 +271,5 @@
         <h5><a href="politicadeprivacidade.html">Política de Privacidade</a></h5>
     </footer>
 </body>
+<script src="myjs.js"></script>
 </html>
