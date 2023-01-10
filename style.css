@@ -746,8 +746,7 @@ html {
     margin: 0 auto !important;
     padding: 0 !important;
     top:80px;
-    width: 90%;
-    flex-direction: row;
+    width: 93%;
     justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
@@ -760,6 +759,7 @@ html {
     display: block;
     margin: 0;
     padding: 0;
+    flex-direction: row-reverse !important;
     top: 0%  !important;
     transform: translate(0,0) !important;
     justify-content: center !important;
