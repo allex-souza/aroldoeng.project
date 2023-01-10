@@ -702,6 +702,9 @@ html {
       .close:after, .close:before {
         height: 50px;
         }
+        .alingButtonSobre{
+            margin:0 auto 0 auto !important;
+          }
   }
   .imgContact{
     box-shadow: none !important;
