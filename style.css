@@ -20,6 +20,7 @@ a{
     bottom: 20px;
     right: 20px;
     animation: moveInBottom .8s ease-out;
+    cursor: pointer;
 }
 @keyframes moveInBottom{
     0% {
@@ -235,6 +236,13 @@ header{
 .articlest p{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
+    color: #373435;
+    padding: 10px 30px 10px 0;
+    letter-spacing: 0.019rem;
+}
+.articlest span{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: none;
     color: #373435;
     padding: 10px 30px 10px 0;
     letter-spacing: 0.019rem;
@@ -784,4 +792,22 @@ html {
 }
 .tapButHamburgerModal::after{
     display: none;
+}
+
+.closeAll{
+    display: flex !important;
+}
+#lerMais{
+    display: none;
+}
+.openLermaish{
+    display: block !important;
+}
+.butLermais{
+    color: rgb(42, 42, 255) !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+.butOcultim{
+    display: none !important;
 }
