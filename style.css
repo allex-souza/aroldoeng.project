@@ -797,16 +797,18 @@ html {
 .closeAll{
     display: flex !important;
 }
-#lerMais{
-    display: none;
+#lermais01, #lermais02,#lermais03,#lermais04,#lermais05{
+    display: none ;
+    
 }
 .openLermaish{
     display: block !important;
 }
-.butLermais{
-    color: rgb(42, 42, 255) !important;
+.lermais01,.lermais02,.lermais03,.lermais04,.lermais05 {
+    color: #06c !important;
     font-weight: 700;
     cursor: pointer;
+    white-space:nowrap;
 }
 .butOcultim{
     display: none !important;
